@@ -3,19 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Happy Birthday Azhar!</title>
+  <title>Happy Birthday My Princess 💖</title>
   <style>
     @keyframes fadeIn {
       0% { opacity: 0; transform: translateY(20px); }
       100% { opacity: 1; transform: translateY(0); }
     }
 
+    @keyframes floatUp {
+      0% { transform: translateY(0) rotate(-45deg); opacity: 0; }
+      20% { opacity: 1; }
+      80% { opacity: 1; }
+      100% { transform: translateY(-500px) rotate(-45deg); opacity: 0; }
+    }
+
     body {
       margin: 0;
       padding: 0;
-      background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+      background: linear-gradient(to right, #ffdde1, #ee9ca7); /* Soft romantic gradient */
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #333;
+      color: #4a2c2a;
       text-align: center;
       animation: fadeIn 2s ease-in-out;
     }
@@ -26,13 +33,15 @@
 
     header h1 {
       font-size: 3em;
-      color: #FFFFF0; /* Slightly brighter light yellow (Ivory) */
-      text-shadow: 3px 3px 6px darkblue;
+      color: #fff0f5;
+      text-shadow: 3px 3px 8px #b30059;
       animation: fadeIn 2s ease-in-out 0.5s;
     }
-    header h2{
-      font-size: 1.2em;
-      color:#Red;
+
+    header h2 {
+      font-size: 1.3em;
+      color: #ff4d79;
+      margin-top: 10px;
     }
 
     .image-section {
@@ -41,136 +50,115 @@
     }
 
     .image-section img {
-      width: 300px;
+      width: 280px;
       border-radius: 20px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0 25px rgba(255, 105, 180, 0.6);
     }
 
-    .azhar-greeting-box {
-      max-width: 150px; /* Reduced from 200px as per your provided code */
+    .greeting-box {
+      max-width: 180px;
       margin: 30px auto 20px;
-      /* Background and shadow changed to purple as per your last request */
-      background: rgba(220, 195, 252, 0.9); /* Pale purple background with opacity */
+      background: rgba(255, 182, 193, 0.9);
       padding: 15px 20px;
       border-radius: 10px;
-      box-shadow: 0 0 12px rgba(128, 0, 128, 0.4); /* Purple shadow */
+      box-shadow: 0 0 15px rgba(255, 105, 180, 0.4);
       animation: fadeIn 2s ease-in-out 1.2s;
     }
 
-    .azhar-greeting-box p {
-      font-size: 1.3em;
-      /* Text color changed to dark purple */
-      color: #5a2e98; /* Darker purple text color for contrast */
-      margin-bottom: 1; /* Changed from 1 to 0 for standard CSS */
+    .greeting-box p {
+      font-size: 1.4em;
+      color: #b30059;
+      font-weight: bold;
+      margin: 0;
     }
 
     .message-section {
-      max-width: 900px; /* Increased from 700px as per your provided code */
+      max-width: 850px;
       margin: 40px auto;
-      /* Background and shadow changed to purple as per your last request */
-      background: rgba(220, 195, 252, 0.9); /* Pale purple background */
-      padding: 30px;
-      border-radius: 100px; /* Increased from 20px as per your provided code */
-      box-shadow: 0 0 12px rgba(128, 0, 128, 0.4); /* Purple shadow */
+      background: rgba(255, 240, 245, 0.9);
+      padding: 40px;
+      border-radius: 40px;
+      box-shadow: 0 0 20px rgba(255, 182, 193, 0.6);
       animation: fadeIn 2s ease-in-out 1.5s;
     }
 
     .message-section p {
       font-size: 1.2em;
+      line-height: 1.6;
       margin-bottom: 20px;
-      /* Text color changed to dark purple */
-      color: #5a2e98; /* Darker purple text color */
+      color: #800040;
     }
 
-    /* New styles for the navigation button on d.html */
     .next-button-container {
-      margin: 50px 0 30px; /* Add margin for spacing */
+      margin: 50px 0 30px;
     }
 
     .next-button-container button {
-      background-color: #5a2e98; /* Match the purple color */
+      background-color: #ff4d79;
       color: white;
       border: none;
       padding: 15px 30px;
       font-size: 1.2em;
-      border-radius: 10px;
+      border-radius: 12px;
       cursor: pointer;
       transition: background-color 0.3s ease, transform 0.2s ease;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
 
     .next-button-container button:hover {
-      background-color: #7d4cc0; /* Lighter purple on hover */
-      transform: translateY(-2px); /* Slight lift effect */
+      background-color: #ff80aa;
+      transform: translateY(-3px);
     }
 
     .footer {
       margin: 40px 0;
-      font-size: 0.9em;
-      color: #555;
+      font-size: 0.95em;
+      color: #663366;
     }
 
-    /* Heart Decorations CSS (copied from previous instructions) */
+    /* Floating hearts */
     .heart {
       position: absolute;
-      width: 30px;
-      height: 30px;
-      background-color: #FF69B4; /* Hot Pink */
+      width: 25px;
+      height: 25px;
+      background-color: #ff4d79;
       transform: rotate(-45deg);
-      animation: floatUp 6s infinite ease-in-out;
+      animation: floatUp 7s infinite ease-in-out;
       opacity: 0;
-      z-index: -1; /* Place hearts behind content */
+      z-index: -1;
     }
 
     .heart:before,
     .heart:after {
       content: '';
       position: absolute;
-      width: 30px;
-      height: 30px;
-      background-color: #FF69B4; /* Hot Pink */
+      width: 25px;
+      height: 25px;
+      background-color: #ff4d79;
       border-radius: 50%;
     }
 
     .heart:before {
-      top: -15px;
+      top: -12px;
       left: 0;
     }
 
     .heart:after {
       top: 0;
-      left: 15px;
-    }
-
-    /* Animation for floating hearts */
-    @keyframes floatUp {
-      0% {
-        transform: translateY(0) rotate(-45deg);
-        opacity: 0;
-      }
-      20% {
-        opacity: 1;
-      }
-      80% {
-        opacity: 1;
-      }
-      100% {
-        transform: translateY(-500px) rotate(-45deg);
-        opacity: 0;
-      }
+      left: 12px;
     }
   </style>
 </head>
 <body>
+
+  <!-- Floating hearts -->
   <div class="heart" style="left: 10%; top: 80%; animation-delay: 0s;"></div>
-  <div class="heart" style="left: 20%; top: 90%; animation-delay: 2s;"></div>
-  <div class="heart" style="left: 30%; top: 70%; animation-delay: 4s;"></div>
-  <div class="heart" style="left: 40%; top: 85%; animation-delay: 1s;"></div>
-  <div class="heart" style="left: 50%; top: 75%; animation-delay: 3s;"></div>
-  <div class="heart" style="left: 60%; top: 95%; animation-delay: 0.5s;"></div>
-  <div class="heart" style="left: 70%; top: 65%; animation-delay: 2.5s;"></div>
-  <div class="heart" style="left: 80%; top: 80%; animation-delay: 4.5s;"></div>
-  <div class="heart" style="left: 90%; top: 70%; animation-delay: 1.5s;"></div>
+  <div class="heart" style="left: 20%; top: 90%; animation-delay: 1s;"></div>
+  <div class="heart" style="left: 35%; top: 75%; animation-delay: 2.5s;"></div>
+  <div class="heart" style="left: 50%; top: 85%; animation-delay: 1.5s;"></div>
+  <div class="heart" style="left: 65%; top: 95%; animation-delay: 3s;"></div>
+  <div class="heart" style="left: 80%; top: 70%; animation-delay: 2s;"></div>
+  <div class="heart" style="left: 90%; top: 85%; animation-delay: 4s;"></div>
 
   <audio autoplay loop>
     <source src="music.mp3" type="audio/mp3">
@@ -178,29 +166,32 @@
   </audio>
 
   <header>
-    <h1>Happy Birthday My Love 🎉</h1>
+    <h1>Happy Birthday My Princess 💖</h1>
+    <h2>My heart belongs to you, today and always 💞</h2>
   </header>
 
   <div class="image-section">
-    <img src="pic.jpeg.jpeg" alt="Best Friends Photo" />
+    <img src="pic.jpeg.jpeg" alt="Couple Photo" />
   </div>
 
-  <div class="azhar-greeting-box">
-    <p><strong>Dear Jiya</strong>❤️</p>
+  <div class="greeting-box">
+    <p>Dear My Love ❤️</p>
   </div>
 
   <div class="message-section">
-    <p>Today is your day😘, but honestly, every day feels special with you around🥰. You're not just my best friend, you're my one and only♥️. My ride or die. My cutie. ❤️</p>
-    <p>Words will never be enough to describe what you mean to me🥰. You've been my strength in silence🤭, my joy in sorrow🤭, you are my everything yr🙈.</p>
-    <p>In a very short time you are close to my heart❤️ and now I can’t imagine my life without you👈, you are JAAN ❤️, SUKOON of mine❤️. you are a person like I share with you every little thing of mine without any hesitation, then hassh ab sahi hai..bta dia mene isko ..baat hogai is sy ..ab sukoon mil gya🥰, or agr baat na ho ek din hogya chlo thek hai .. 2 din hogai phr bhi koi baat nai hoi koi msg nai😕"no good morning😕" "no goodnight😕" phr jo gussa ata hai na 😬 k khn maar gya hai ye itna busy hai k ek msg krne ka bhi time nai 😬,,,like that feeling will appear k abhi samne ayai or batayon isko me achy sy😁😁... by the way Thank you so much  for existing♥️, for staying, for being YOU♥️.</p>
-    <p>Happy Birthday once again🎂! May your life be filled with love♥️, laughter😁, and all the happiness you deserve😀.</p>
-    <p>Always with you, forever and ever 💫</p>
+    <p>Today is your special day, my love 🥰. The day my favorite person came into this world, and I’ll forever be thankful for that. You are my smile, my peace, my reason to believe in love again 💫.</p>
+    <p>Every little thing about you makes my world brighter — your laugh, your smile, your voice, your everything 😚. You are not just my girlfriend, you are my forever person ❤️.</p>
+    <p>No matter where life takes us, one thing will never change — I’ll always choose you, every single day 🥹💖. You make my heart feel at home, my princess 👑.</p>
+    <p>Happy Birthday, my heartbeat 💝. May your day be filled with laughter, warmth, and endless love. I love you endlessly 😘.</p>
+    <p>— Yours forever, <strong>Jiya 💌</strong></p>
   </div>
 
   <div class="next-button-container">
-    <button onclick="window.location.href='page2.html'">Click Next For More</button>
+    <button onclick="window.location.href='page2.html'">Click for a Little Surprise 💕</button>
   </div>
 
   <div class="footer">
-    <p>Made with love by yours Fazal 💕</p>
+    <p>Made with all my love for you 💗</p>
   </div>
+</body>
+</html>
