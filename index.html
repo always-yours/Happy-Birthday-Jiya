@@ -10,21 +10,32 @@
       100% { opacity: 1; transform: translateY(0); }
     }
 
+    /* 🌹 Floating rose animation */
     @keyframes floatUp {
-      0% { transform: translateY(0) rotate(-45deg); opacity: 0; }
-      20% { opacity: 1; }
-      80% { opacity: 1; }
-      100% { transform: translateY(-500px) rotate(-45deg); opacity: 0; }
+      0% {
+        transform: translateY(0) scale(1) rotate(0deg);
+        opacity: 0;
+      }
+      20% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-800px) scale(1.5) rotate(360deg);
+        opacity: 0;
+      }
     }
 
     body {
       margin: 0;
       padding: 0;
-      background: linear-gradient(to right, #ffdde1, #ee9ca7); /* Soft romantic gradient */
+      background: linear-gradient(to right, #ffdde1, #ee9ca7);
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: #4a2c2a;
       text-align: center;
       animation: fadeIn 2s ease-in-out;
+      overflow: hidden;
+      height: 100vh;
+      position: relative;
     }
 
     header {
@@ -35,163 +46,4 @@
       font-size: 3em;
       color: #fff0f5;
       text-shadow: 3px 3px 8px #b30059;
-      animation: fadeIn 2s ease-in-out 0.5s;
-    }
-
-    header h2 {
-      font-size: 1.3em;
-      color: #ff4d79;
-      margin-top: 10px;
-    }
-
-    .image-section {
-      margin: 20px 0;
-      animation: fadeIn 2s ease-in-out 1s;
-    }
-
-    .image-section img {
-      width: 280px;
-      border-radius: 20px;
-      box-shadow: 0 0 25px rgba(255, 105, 180, 0.6);
-    }
-
-    .greeting-box {
-      max-width: 180px;
-      margin: 30px auto 20px;
-      background: rgba(255, 182, 193, 0.9);
-      padding: 15px 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(255, 105, 180, 0.4);
-      animation: fadeIn 2s ease-in-out 1.2s;
-    }
-
-    .greeting-box p {
-      font-size: 1.4em;
-      color: #b30059;
-      font-weight: bold;
-      margin: 0;
-    }
-
-    .message-section {
-      max-width: 850px;
-      margin: 40px auto;
-      background: rgba(255, 240, 245, 0.9);
-      padding: 40px;
-      border-radius: 40px;
-      box-shadow: 0 0 20px rgba(255, 182, 193, 0.6);
-      animation: fadeIn 2s ease-in-out 1.5s;
-    }
-
-    .message-section p {
-      font-size: 1.2em;
-      line-height: 1.6;
-      margin-bottom: 20px;
-      color: #800040;
-    }
-
-    .next-button-container {
-      margin: 50px 0 30px;
-    }
-
-    .next-button-container button {
-      background-color: #ff4d79;
-      color: white;
-      border: none;
-      padding: 15px 30px;
-      font-size: 1.2em;
-      border-radius: 12px;
-      cursor: pointer;
-      transition: background-color 0.3s ease, transform 0.2s ease;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    }
-
-    .next-button-container button:hover {
-      background-color: #ff80aa;
-      transform: translateY(-3px);
-    }
-
-    .footer {
-      margin: 40px 0;
-      font-size: 0.95em;
-      color: #663366;
-    }
-
-    /* Floating hearts */
-    .heart {
-      position: absolute;
-      width: 25px;
-      height: 25px;
-      background-color: #ff4d79;
-      transform: rotate(-45deg);
-      animation: floatUp 7s infinite ease-in-out;
-      opacity: 0;
-      z-index: -1;
-    }
-
-    .heart:before,
-    .heart:after {
-      content: '';
-      position: absolute;
-      width: 25px;
-      height: 25px;
-      background-color: #ff4d79;
-      border-radius: 50%;
-    }
-
-    .heart:before {
-      top: -12px;
-      left: 0;
-    }
-
-    .heart:after {
-      top: 0;
-      left: 12px;
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Floating hearts -->
-<div class="flower" style="left: 10%; top: 90%; animation-delay: 0s;">🌸</div>
-<div class="flower" style="left: 20%; top: 95%; animation-delay: 1s;">🌸</div>
-<div class="flower" style="left: 35%; top: 92%; animation-delay: 2.5s;">🌸</div>
-<div class="flower" style="left: 50%; top: 93%; animation-delay: 1.5s;">🌸</div>
-<div class="flower" style="left: 65%; top: 95%; animation-delay: 3s;">🌸</div>
-<div class="flower" style="left: 80%; top: 90%; animation-delay: 2s;">🌸</div>
-<div class="flower" style="left: 90%; top: 94%; animation-delay: 4s;">🌸</div>
-
-  <audio autoplay loop>
-    <source src="music.mp3" type="audio/mp3">
-    Your browser does not support the audio element.
-  </audio>
-
-  <header>
-    <h1>Happy Birthday My Princess 💖</h1>
-    <h2>My heart belongs to you, today and always 💞</h2>
-  </header>
-
-  <div class="image-section">
-    <img src="pic.jpeg.jpeg" alt="Couple Photo" />
-  </div>
-
-  <div class="greeting-box">
-    <p>Dear My Love❤️</p>
-  </div>
-
-  <div class="message-section">
-    <p>Today is your special day, my love 🥰. The day my favorite person came into this world, and I’ll forever be thankful for that. You are my smile, my peace, my reason to believe in love again 💫.</p>
-    <p>Every little thing about you makes my world brighter — your laugh, your smile, your voice, your everything 😚.you are my forever person ❤️.</p>
-    <p>No matter where life takes us, one thing will never change — I’ll always choose you, every single day 😘😘. You make my heart feel at home, my princess 👑.</p>
-    <p>Happy Birthday, my heartbeat 💝. May your day be filled with laughter, warmth, and endless love. I love you endlessly 😘.</p>
-    <p>— Yours forever, <strong>Jiya 💌</strong></p>
-  </div>
-
-  <div class="next-button-container">
-    <button onclick="window.location.href='page2.html'">Click for a Little Surprise 💕</button>
-  </div>
-
-  <div class="footer">
-    <p>Made with all my love for you 💗</p>
-  </div>
-</body>
-</html>
+      animation: fade
