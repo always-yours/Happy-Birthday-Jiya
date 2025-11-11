@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Azhar! (Page 2)</title>
+  <style>
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    /* Styles for the navigation buttons */
+    .nav-buttons {
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+
+    .nav-buttons button {
+      background-color: #5a2e98;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1.1em;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      margin: 0 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-buttons button:hover {
+      background-color: #7d4cc0;
+      transform: translateY(-2px);
+    }
+
+    /* Styles for the message boxes (copied from your original) */
+    .short-message-box, .special-message-box {
+      max-width: 600px;
+      margin: 30px auto;
+      background: rgba(255, 255, 255, 0.9); /* Default background, can be overridden */
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      opacity: 0; /* Initially hidden */
+      transform: translateY(20px); /* Initially offset */
+      transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Smooth transition for appearance */
+    }
+
+    .short-message-box {
+      max-width: 300px; /* Kept max-width as provided */
+      /* Changed background color to a very light red */
+      background: rgba(255, 220, 220, 0.9);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .short-message-box p {
+      font-size: 1.15em;
+      /* Changed text color to a vibrant red */
+      color: #FF0000; /* Pure Red */
+      margin-bottom: 1; /* Changed from 1 to 0 for standard CSS units */
+    }
+
+    .special-message-box {
+      max-width: 600px;
+      background: rgba(224, 195, 252, 0.9);
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .special-message-box p {
+      font-size: 1.1em;
+      color: #5a2e98;
+      margin-bottom: 0;
+    }
+
+    .footer {
+      margin: 40px 0;
+      font-size: 0.9em;
+      color: #555;
+      animation: fadeIn 2s ease-in-out 2s; /* This will start animation once page loads */
+    }
+
+    /* Heart Decorations CSS (ADDED to main style block in head) */
+    .heart {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background-color: #FF69B4; /* Hot Pink */
+      transform: rotate(-45deg);
+      animation: floatUp 6s infinite ease-in-out;
+      opacity: 0;
+      z-index: -1; /* Place hearts behind content */
+    }
+
+    .heart:before,
+    .heart:after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background-color: #FF69B4; /* Hot Pink */
+      border-radius: 50%;
+    }
+
+    .heart:before {
+      top: -15px;
+      left: 0;
+    }
+
+    .heart:after {
+      top: 0;
+      left: 15px;
+    }
+
+    /* Animation for floating hearts */
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) rotate(-45deg);
+        opacity: 0;
+      }
+      20% {
+        opacity: 1;
+      }
+      80% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-500px) rotate(-45deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="heart" style="left: 10%; top: 80%; animation-delay: 0s;"></div>
+  <div class="heart" style="left: 20%; top: 90%; animation-delay: 2s;"></div>
+  <div class="heart" style="left: 30%; top: 70%; animation-delay: 4s;"></div>
+  <div class="heart" style="left: 40%; top: 85%; animation-delay: 1s;"></div>
+  <div class="heart" style="left: 50%; top: 75%; animation-delay: 3s;"></div>
+  <div class="heart" style="left: 60%; top: 95%; animation-delay: 0.5s;"></div>
+  <div class="heart" style="left: 70%; top: 65%; animation-delay: 2.5s;"></div>
+  <div class="heart" style="left: 80%; top: 80%; animation-delay: 4.5s;"></div>
+  <div class="heart" style="left: 90%; top: 70%; animation-delay: 1.5s;"></div>
+
+  <audio autoplay loop>
+    <source src="music.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <header>
+    <h1>A Little More For You😊</h1>
+  </header>
+
+  <div class="nav-buttons">
+    <button onclick="window.location.href='index.html'">Go Back</button>
+  </div>
+
+  <div class="short-message-box" id="message1">
+    <p>I lOVE YOU MY JAN 💕🙈😘</p>
+  </div>
+
+  <div class="special-message-box" id="message2">
+    <p><em>Bs EK CHOTI SI BATT🙃..."KABHI NARAZ NA HONA MERE SY🥺,CHAHY GUSSA KRLENA MERE UPPER HI,KUCH BURA LAGY TW DIRIK BOL DENA🙂,BUT KABHI BATT KRNA NA CHORNA🥺,BARDASHAT NAI HOGA MEREE SY🥺</em></p>
+  </div>
+
+  <div class="footer">
+    <p>Made with love by yours Fazal 💕</p>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const message1 = document.getElementById('message1');
+      const message2 = document.getElementById('message2');
+
+      // Show the first message immediately
+      setTimeout(() => {
+        message1.style.opacity = '1';
+        message1.style.transform = 'translateY(0)';
+      }, 500); // Appear 0.5 seconds after page load
+
+      // Show the second message after a delay from the first
+      setTimeout(() => {
+        message2.style.opacity = '1';
+        message2.style.transform = 'translateY(0)';
+      }, 2500); // Appear 2.5 seconds after page load (2 seconds after first message starts appearing)
+    });
+  </script>
+</body>
+</html>
