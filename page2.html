@@ -10,11 +10,18 @@
       100% { opacity: 1; transform: translateY(0); }
     }
 
+    /* Floating flower animation */
     @keyframes floatUp {
-      0% { transform: translateY(0) rotate(-45deg); opacity: 0; }
-      20% { opacity: 1; }
-      80% { opacity: 1; }
-      100% { transform: translateY(-500px) rotate(-45deg); opacity: 0; }
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 0;
+      }
+      10% { opacity: 1; }
+      70% { opacity: 1; transform: translateY(-400px) scale(1.2) rotate(10deg); }
+      100% {
+        transform: translateY(-550px) scale(1.4) rotate(-15deg);
+        opacity: 0;
+      }
     }
 
     body {
@@ -25,6 +32,7 @@
       color: #4a2c2a;
       text-align: center;
       animation: fadeIn 2s ease-in-out;
+      overflow: hidden; /* hide scroll for floating elements */
     }
 
     header {
@@ -99,41 +107,27 @@
       animation: fadeIn 2s ease-in-out 2s;
     }
 
-    .heart {
+    /* Flower style */
+    .flower {
       position: absolute;
-      width: 25px;
-      height: 25px;
-      background-color: #ff4d79;
-      transform: rotate(-45deg);
+      font-size: 30px;
       animation: floatUp 7s infinite ease-in-out;
       opacity: 0;
-      z-index: -1;
+      z-index: 0;
+      bottom: -50px; /* start below screen */
     }
-
-    .heart:before,
-    .heart:after {
-      content: '';
-      position: absolute;
-      width: 25px;
-      height: 25px;
-      background-color: #ff4d79;
-      border-radius: 50%;
-    }
-
-    .heart:before { top: -12px; left: 0; }
-    .heart:after { top: 0; left: 12px; }
   </style>
 </head>
 <body>
 
-  <!-- Floating Hearts -->
- <div class="flower" style="left: 10%; top: 90%; animation-delay: 0s;">🌸</div>
-<div class="flower" style="left: 20%; top: 95%; animation-delay: 1s;">🌸</div>
-<div class="flower" style="left: 35%; top: 92%; animation-delay: 2.5s;">🌸</div>
-<div class="flower" style="left: 50%; top: 93%; animation-delay: 1.5s;">🌸</div>
-<div class="flower" style="left: 65%; top: 95%; animation-delay: 3s;">🌸</div>
-<div class="flower" style="left: 80%; top: 90%; animation-delay: 2s;">🌸</div>
-<div class="flower" style="left: 90%; top: 94%; animation-delay: 4s;">🌸</div>
+  <!-- Floating Flowers -->
+  <div class="flower" style="left: 10%; animation-delay: 0s;">🌹</div>
+  <div class="flower" style="left: 20%; animation-delay: 1s;">🌹</div>
+  <div class="flower" style="left: 35%; animation-delay: 2.5s;">🌹</div>
+  <div class="flower" style="left: 50%; animation-delay: 1.5s;">🌹</div>
+  <div class="flower" style="left: 65%; animation-delay: 3s;">🌹</div>
+  <div class="flower" style="left: 80%; animation-delay: 2s;">🌹</div>
+  <div class="flower" style="left: 90%; animation-delay: 4s;">🌹</div>
 
   <audio autoplay loop>
     <source src="music.mp3" type="audio/mp3">
@@ -166,20 +160,4 @@
   </div>
 
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const msg1 = document.getElementById('message1');
-      const msg2 = document.getElementById('message2');
-
-      setTimeout(() => {
-        msg1.style.opacity = '1';
-        msg1.style.transform = 'translateY(0)';
-      }, 500);
-
-      setTimeout(() => {
-        msg2.style.opacity = '1';
-        msg2.style.transform = 'translateY(0)';
-      }, 2500);
-    });
-  </script>
-</body>
-</html>
+    document.addEventListener(
