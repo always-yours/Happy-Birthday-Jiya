@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Azhar!</title>
+  <style>
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    header {
+      padding: 40px 20px 10px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      color: #FFFFF0; /* Slightly brighter light yellow (Ivory) */
+      text-shadow: 3px 3px 6px darkblue;
+      animation: fadeIn 2s ease-in-out 0.5s;
+    }
+    header h2{
+      font-size: 1.2em;
+      color:#Red;
+    }
+
+    .image-section {
+      margin: 20px 0;
+      animation: fadeIn 2s ease-in-out 1s;
+    }
+
+    .image-section img {
+      width: 300px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .azhar-greeting-box {
+      max-width: 150px; /* Reduced from 200px as per your provided code */
+      margin: 30px auto 20px;
+      /* Background and shadow changed to purple as per your last request */
+      background: rgba(220, 195, 252, 0.9); /* Pale purple background with opacity */
+      padding: 15px 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(128, 0, 128, 0.4); /* Purple shadow */
+      animation: fadeIn 2s ease-in-out 1.2s;
+    }
+
+    .azhar-greeting-box p {
+      font-size: 1.3em;
+      /* Text color changed to dark purple */
+      color: #5a2e98; /* Darker purple text color for contrast */
+      margin-bottom: 1; /* Changed from 1 to 0 for standard CSS */
+    }
+
+    .message-section {
+      max-width: 900px; /* Increased from 700px as per your provided code */
+      margin: 40px auto;
+      /* Background and shadow changed to purple as per your last request */
+      background: rgba(220, 195, 252, 0.9); /* Pale purple background */
+      padding: 30px;
+      border-radius: 100px; /* Increased from 20px as per your provided code */
+      box-shadow: 0 0 12px rgba(128, 0, 128, 0.4); /* Purple shadow */
+      animation: fadeIn 2s ease-in-out 1.5s;
+    }
+
+    .message-section p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+      /* Text color changed to dark purple */
+      color: #5a2e98; /* Darker purple text color */
+    }
+
+    /* New styles for the navigation button on d.html */
+    .next-button-container {
+      margin: 50px 0 30px; /* Add margin for spacing */
+    }
+
+    .next-button-container button {
+      background-color: #5a2e98; /* Match the purple color */
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .next-button-container button:hover {
+      background-color: #7d4cc0; /* Lighter purple on hover */
+      transform: translateY(-2px); /* Slight lift effect */
+    }
+
+    .footer {
+      margin: 40px 0;
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    /* Heart Decorations CSS (copied from previous instructions) */
+    .heart {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background-color: #FF69B4; /* Hot Pink */
+      transform: rotate(-45deg);
+      animation: floatUp 6s infinite ease-in-out;
+      opacity: 0;
+      z-index: -1; /* Place hearts behind content */
+    }
+
+    .heart:before,
+    .heart:after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background-color: #FF69B4; /* Hot Pink */
+      border-radius: 50%;
+    }
+
+    .heart:before {
+      top: -15px;
+      left: 0;
+    }
+
+    .heart:after {
+      top: 0;
+      left: 15px;
+    }
+
+    /* Animation for floating hearts */
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) rotate(-45deg);
+        opacity: 0;
+      }
+      20% {
+        opacity: 1;
+      }
+      80% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-500px) rotate(-45deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="heart" style="left: 10%; top: 80%; animation-delay: 0s;"></div>
+  <div class="heart" style="left: 20%; top: 90%; animation-delay: 2s;"></div>
+  <div class="heart" style="left: 30%; top: 70%; animation-delay: 4s;"></div>
+  <div class="heart" style="left: 40%; top: 85%; animation-delay: 1s;"></div>
+  <div class="heart" style="left: 50%; top: 75%; animation-delay: 3s;"></div>
+  <div class="heart" style="left: 60%; top: 95%; animation-delay: 0.5s;"></div>
+  <div class="heart" style="left: 70%; top: 65%; animation-delay: 2.5s;"></div>
+  <div class="heart" style="left: 80%; top: 80%; animation-delay: 4.5s;"></div>
+  <div class="heart" style="left: 90%; top: 70%; animation-delay: 1.5s;"></div>
+
+  <audio autoplay loop>
+    <source src="music.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <header>
+    <h1>Happy Birthday My Love 🎉</h1>
+  </header>
+
+  <div class="image-section">
+    <img src="pic.jpeg.jpeg" alt="Best Friends Photo" />
+  </div>
+
+  <div class="azhar-greeting-box">
+    <p><strong>Dear Jiya</strong>❤️</p>
+  </div>
+
+  <div class="message-section">
+    <p>Today is your day😘, but honestly, every day feels special with you around🥰. You're not just my best friend, you're my one and only♥️. My ride or die. My cutie. ❤️</p>
+    <p>Words will never be enough to describe what you mean to me🥰. You've been my strength in silence🤭, my joy in sorrow🤭, you are my everything yr🙈.</p>
+    <p>In a very short time you are close to my heart❤️ and now I can’t imagine my life without you👈, you are JAAN ❤️, SUKOON of mine❤️. you are a person like I share with you every little thing of mine without any hesitation, then hassh ab sahi hai..bta dia mene isko ..baat hogai is sy ..ab sukoon mil gya🥰, or agr baat na ho ek din hogya chlo thek hai .. 2 din hogai phr bhi koi baat nai hoi koi msg nai😕"no good morning😕" "no goodnight😕" phr jo gussa ata hai na 😬 k khn maar gya hai ye itna busy hai k ek msg krne ka bhi time nai 😬,,,like that feeling will appear k abhi samne ayai or batayon isko me achy sy😁😁... by the way Thank you so much  for existing♥️, for staying, for being YOU♥️.</p>
+    <p>Happy Birthday once again🎂! May your life be filled with love♥️, laughter😁, and all the happiness you deserve😀.</p>
+    <p>Always with you, forever and ever 💫</p>
+  </div>
+
+  <div class="next-button-container">
+    <button onclick="window.location.href='page2.html'">Click Next For More</button>
+  </div>
+
+  <div class="footer">
+    <p>Made with love by yours Fazal 💕</p>
+  </div>
